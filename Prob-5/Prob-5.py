@@ -2,10 +2,16 @@
 #   Programming Assignment 4
 #     Prob-5.py
 
-# <YOUR NAME>
+# Jason Markus
 
 def main():
-    x = eval(2)
-    print("x:", x)
+    try:
+        x = eval(2)
+    except TypeError:
+        print("x:", x)
+    else:
+        print("Invalid coefficient given")
+except:
+    print("/nOops! Something went wrong.")
 
 main()
